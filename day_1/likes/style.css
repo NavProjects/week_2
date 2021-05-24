@@ -1,0 +1,40 @@
+*{
+    background-color: lightslategray;
+}
+body{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    height: 100px;
+    color: black;
+    border: 2px solid black;
+    width: 500px;
+    padding: 20px;
+}
+.userline{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+}
+button{
+    background-color: #FFD966;
+    box-shadow: 2px 2px 2px black;
+}
+h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.stickyNote{
+    width: 130px;
+    padding: 10px;
+    margin-left: 100px;
+    background-color: #F2CA4E;
+    transform: skewX(-4deg);
+    margin-top: 0px;
+}
