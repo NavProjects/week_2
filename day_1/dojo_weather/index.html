@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div class="topBar flex">
+        <h1>DojoWeather</h1>
+        <ul class="flex">
+            <li onclick="alert('Loading weather report...')"><a href="">Burbank</a></li>
+            <li onclick="alert('Loading weather report...')"><a href="">Chicago</a></li>
+            <li onclick="alert('Loading weather report...')"><a href="">Dallas</a></li>
+        </ul>
+    </div>
+    <div class="headBar flex ">
+        <h1>San Jose</h1>
+        <div>
+        <label for="tempSelect">show temperature in </label>
+        <select name="tempSelect" onchange="degChange(this.value)" id="tempSelect">
+            <option class="celc" value="C">&#176;C</option>
+            <option class="fer" value="F">&#176;F</option>
+        </select>
+        </div>
+    </div>
+    <div class="midContain flex ">
+        <div class="today flex center display">
+            <h1>Today</h1>
+            <img src="some_rain.png" alt="cloud with rain">
+            <p>some rain</p>
+            <div class="flex deg">
+                <h3 class="hot">29.9  </h3>
+                <h3 class="cold">18.3  </h3>
+            </div>
+        </div>
+        <div class="tomorrow flex center display">
+            <h1>Tomorrow</h1>
+            <img src="some_sun.png" alt="picture of sun">
+            <p>some sun</p>
+            <div class="flex deg">
+                <h3 class="hot">26.7</h3>
+                <h3 class="cold">18.9</h3>
+            </div>
+        </div>
+        <div class="friday flex center display">
+            <h1>Friday</h1>
+            <img src="some_clouds.png" alt="picture of some clouds">
+            <p>some clouds</p>
+            <div class="flex deg">
+                <h3 class="hot">20.6</h3>
+                <h3 class="cold">16.1</h3>
+            </div>
+        </div>
+        <div class="saturday flex center display">
+            <h1>Saturday</h1>
+            <img src="some_sun.png" alt="picture of sun">
+            <p>some sun</p>
+            <div class="flex deg">
+                <h3 class="hot">25.6</h3>
+                <h3 class="cold">21.1</h3>
+            </div>
+        </div>
+    </div>
+    <div class="cookiebar flex">
+        <img class="cookiePic" src="cookie.png" alt="picture of cookie">
+        <div class="cookieInfo">
+            <h2>Stop! Cookie time</h2>
+            <h3> We use cookies (sadly not the edible ones) to personalize content and ads, to provide solial media features and to analyze our traffic. <a href="">Read More...</a> </h3>
+        </div>
+        <button class="acceptBut" onclick="document.querySelector('.cookiebar').remove()">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
