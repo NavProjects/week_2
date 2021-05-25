@@ -140,13 +140,18 @@ a {
     list-style-type: none;
 }
 
-.card-list-item, 
-.card-list-item > * {
+.card-list-item1, 
+.card-list-item1 > * {
+    display: flex;
+    align-items: center;
+}
+.card-list-item2, 
+.card-list-item2 > * {
     display: flex;
     align-items: center;
 }
 
-.card-list-item {
+.card-list-item1, .card-list-item2 {
     margin-bottom: 20px;
     justify-content: space-between;
 }
